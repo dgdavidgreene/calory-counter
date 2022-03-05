@@ -224,7 +224,7 @@ class TrackerOverviewE2E {
                 .currentDestination
                 ?.route
                 ?.startsWith(Route.TRACKER_OVERVIEW)
-        )
+        ).isTrue()
 
         composeRule
             .onAllNodesWithText(expectedCarbs.toStr())
